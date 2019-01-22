@@ -1,0 +1,35 @@
+
+安装软件
+1. 下载***.tar.gz文件
+2. 解压 tar zxf ***。tar.gz
+3. cd 解压目录
+4. 设置安装配置参数，如安装路径 ./configure PREFIX=/opt/*** 
+5. 编译 make
+6. 安装 make install
+
+nohup java -jar jeesuite-config-server.jar > config-server.out 2>&1 &
+
+
+Git:
+$ git add .
+$ git commit -m "提交说明"
+$ git push -u origin master
+
+添加忽略文件并删除远程对应文件
+1. 移除git管理
+ git rm -r --cached 特定文件		（**/application.properties）
+2. 在 .gitignore中添加忽略
+3.更新git管理
+git add .
+4. 提价修改到本地
+git commit -m '修改忽略文件'
+5. 推送到远程仓库
+git push original master
+
+
+Jenkins:
+启动：java -jar jenkins.war --httpPort=8080
+WAR/EAR files相对路径是相对于jenkins下的workspace/任务名称
+
+查找文件
+find / -amin -10|grep zlib 所有文件夹下最近10分钟访问过的关于zlib的文件
