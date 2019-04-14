@@ -6,7 +6,7 @@
 
 ### 安装 [Elasticsearch](https://www.elastic.co/guide/en/elastic-stack-get-started/6.5/get-started-elastic-stack.html)
 
-1. 下载 [Elasticsearch 6.5.4 Windows zip](https://www.elastic.co/downloads/elasticsearch) 
+1. 下载 [Elasticsearch 6.5.4 Windows zip](https://www.elastic.co/downloads/elasticsearch)
 2. 解压文文件到任意目录：  
 如 `D:\devinstall\elasticsearch-6.5.4`  
 3. 修改 D:\devinstall\elasticsearch-6.5.4\config\elasticsearch.yml 配置文件，在最后添加 xpack.ml.enabled: false
@@ -100,7 +100,7 @@
 
 5. 打开 Filebeat 目录下的 filebeat.yml，按以下修改.
 
-    ```json   
+    ```json
     filebeat.inputs:
     - type: log
         enabled: true
@@ -113,7 +113,7 @@
         multiline.match: after
     output.logstash:
         # The Logstash hosts
-        hosts: ["localhost:5044"]    
+        hosts: ["localhost:5044"]
     ```
 
    参考文档 <https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-log.html>
