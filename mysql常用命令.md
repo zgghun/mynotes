@@ -9,6 +9,7 @@
 #### 备份单个数据库
 
 `mysqldump -u username -p dbname [table1 table2 ...] > backup_name.dump`  
+`mysqldump -h主机名 -P端口 -u用户名 -p密码 --add-drop-table --add-drop-database 数据库名 [表明...] > 文件名.sql`  
 dbname：数据库的名称  
 table1、table2：可选参数，表示需要备份的具体表的名称，为空则整个数据库备份
 backup_name.dump：备份文件，文件名前面可以加上路径  
