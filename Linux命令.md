@@ -41,3 +41,8 @@ source /etc/profile
 **SpringBoot项目启动**：
 `nohup java -jar jeesuite-config-server.jar > config-server.out 2>&1 &`
 
+**利用cat查看指定行**:  
+从100行开始显示 cat | tail -n +100
+显示前500行 cat filename | head -n 500
+显示第100到500 cat filename | head -n 500 | tail -n +100
+
